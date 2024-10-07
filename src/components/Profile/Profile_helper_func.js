@@ -31,6 +31,12 @@ const fetchStats=async(backendLink,username)=>{
     }
 }
 const fetchPieChartData=(game,stats,modeIndex)=>{
+    if(game==="minesweeper"){
+        return [
+            { "title": 'Won', "value": stats[game]["total_games_won"], "color": pieChartColors["win"] },
+            { "title": 'Lost', "value": stats[game]["total_games_played"]-stats[game]["total_games_won"], "color": pieChartColors["loss"] },
+        ];
+    }
     const ans=[];
     let colorIndex=0;
     let lostGames=stats[game]["total_games_played"][modeIndex];

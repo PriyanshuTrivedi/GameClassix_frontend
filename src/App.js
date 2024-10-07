@@ -15,7 +15,7 @@ import Profile from './components/Profile/Profile';
 function App() {
   return (
     <AllStates>
-      // <Router>
+      <Router>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/users/:username'element={<Profile/>} />
@@ -28,7 +28,7 @@ function App() {
           <Route path='/minesweeper' element={<Minesweeper/>} />
           <Route path='/Leaderboard' element={<Leaderboard/>}/>
         </Routes>
-      // </Router>
+      </Router>
     </AllStates>
   );
 }

@@ -10,9 +10,9 @@ root.render(
   // <React.StrictMode>
     
   // </React.StrictMode>
-  <BrowserRouter>
+  // <BrowserRouter>
     <App />
-  </BrowserRouter>
+  // </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

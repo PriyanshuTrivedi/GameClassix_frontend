@@ -74,7 +74,7 @@ const Profile = () => {
           pieChartData
           ?
           (
-            stats[game]["total_games_played"][indexOfMode]>0
+            ((game==="minesweeper" && stats[game]["total_games_played"]>0) || (stats[game]["total_games_played"][indexOfMode]>0)) 
             ?
             <Pie_Chart myData={pieChartData}/>
             :

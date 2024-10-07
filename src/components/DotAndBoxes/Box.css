@@ -1,0 +1,6 @@
+.box{
+    height: var(--boxSide);
+    width: var(--boxSide);
+    border-radius: .2rem;
+    background-color: antiquewhite;
+}

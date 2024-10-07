@@ -1,0 +1,16 @@
+
+.minesweeperCell{
+    height: var( --cellSideMinesweeper);
+    width: var( --cellSideMinesweeper);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: .5rem;
+    background-color: rgb(26 26 26);
+    box-shadow: 1px 1px 3.5px inset rgba(0, 255, 236, 0.8), -1px -1px 3.5px inset rgba(0, 255, 236, 0.8);
+    
+    color: white;
+    font-size: 20px;
+    font-weight:"bold";
+}

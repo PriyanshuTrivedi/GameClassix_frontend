@@ -1,0 +1,101 @@
+:root{
+    --cellSide:25rem;
+    --diagSide:31rem;
+    --diagWidth:.3rem;
+}
+.bingoBoardContainer{
+    height: var(--cellSide);
+    width: var(--cellSide);
+    position: relative;
+}
+.bingoBoard{
+    position: absolute;
+    height: var(--cellSide);
+    width: var(--cellSide);
+    z-index: 0;
+}
+.diagBox{
+    height: var(--cellSide);
+    width: var(--cellSide);
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.diag{
+    width: var(--diagWidth);
+    height: var(--diagSide);
+    border-radius: .15rem;
+    background-color: black;
+    box-shadow: 
+    .5px .5px 1.5px rgba(0, 255, 236, 0.8), 
+    -.5px -.5px 1.5px rgba(0, 255, 236, 0.8);
+}
+#primaryDiag{
+    transform: rotate(-45deg);
+}
+#secondaryDiag{
+    transform: rotate(45deg);
+}
+.players{
+    max-width: 90vw;
+    width: var(--cellSide);
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bingoInitials{
+    height: 6rem;
+    width: var(--cellSide);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.make_visibilibity_hidden_initially{
+    visibility: hidden;
+}
+.bingo_page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-image: url('../Home/img3.jpg'); */
+    background-image: url('../SignInLogIn/photo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bingo_mainArea,.bingo_gameInfoContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bingo_mainArea{
+    width: 40%;
+    min-width: var(--cellSide);
+}
+.bingo_gameInfoContainer{
+    width: 30%;
+    min-width: 30rem;
+}
+.roomIdBoxBingo{
+    font-size: 24px;
+    font-family: system-ui;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: papayawhip;
+}
+
+@media (max-width:500px){
+    :root{
+        --cellSide:19.5rem;
+        --diagSide:24rem;
+        --diagWidth:.2rem;
+    }
+}

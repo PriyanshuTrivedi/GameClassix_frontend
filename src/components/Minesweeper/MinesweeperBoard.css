@@ -1,0 +1,5 @@
+.minesweeperBoard{
+    /* border: 1px solid black; */
+    height: var(--boardSideMinesweeper);
+    width: var(--boardSideMinesweeper);
+}

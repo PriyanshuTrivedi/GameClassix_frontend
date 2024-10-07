@@ -1,0 +1,16 @@
+.mineCountDiv{
+    height: 3rem;
+    width: 5rem;
+    background-color: black;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px cyan;
+}
+.mineImg{
+    height: 2rem;
+    width: 2rem;
+}

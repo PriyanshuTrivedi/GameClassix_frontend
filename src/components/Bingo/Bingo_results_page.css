@@ -1,0 +1,36 @@
+.bingoAfterGameEnds{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../SignInLogIn/photo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gameEndedHeading{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.resBingoBoards{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+.playerBoardAfterBingoGameEnds{
+    margin-bottom: 5rem;
+}
+.playerNameBingoAfterEnd{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width:320px){
+    .resBingoBoards::-webkit-scrollbar{
+        display: none;
+    }
+}

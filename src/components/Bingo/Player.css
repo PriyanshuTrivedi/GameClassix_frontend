@@ -1,0 +1,26 @@
+.playerName_chance{
+    height: 3.5rem;
+    /* width: 5rem; */
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.playerName{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'cambria';
+    font-size: 20px;
+    font-weight: bold;
+}
+.playerChance{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 0px 0px 8px 4px rgba(0, 255, 236, 0.8);
+}

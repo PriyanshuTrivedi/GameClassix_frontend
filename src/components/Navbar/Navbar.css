@@ -1,0 +1,50 @@
+.mainNavbar{
+    color: white;
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftSide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: min(15rem,55vw); */
+    margin-left: min(2rem,4vw);
+}
+.leftLinks{
+    margin-left: min(3vw,3rem);
+}
+.loggedIn{
+    display: flex;
+}
+.giveLeftPadding{
+    padding-left: 1rem;
+}
+.rightSide{
+    margin-right: min(5rem,4vw);
+    font-size: min(16px,3.5vw);
+}
+.nameHeading{
+    font-size: min(24px,5.5vw);
+    font-weight: bold;
+}
+.NavbarLinks{
+    font-size: min(16px,3.5vw);
+    color: white;
+    text-decoration: none;
+}
+.NavbarLinks:hover{
+    color: aliceblue;
+    text-decoration: none;
+    scale: 1.1;
+}
+.NavbarLogout:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.signUpLoginInNavbar:hover{
+    scale: 1.1;
+}

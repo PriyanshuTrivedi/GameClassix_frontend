@@ -1,0 +1,6 @@
+.mainGrid{
+    display: flex;
+    flex-direction: column;
+    height: var(--boardSide);
+    width: var(--boardSide);
+}

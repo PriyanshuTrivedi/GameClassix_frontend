@@ -1,0 +1,31 @@
+:root{
+    --cellSide:25rem;
+    --horiLineHeight:.3rem;
+}
+.bingo_horiLines{
+    height: var(--cellSide);
+    width: var(--cellSide);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+.bingo_horiLine{
+    width: 90%;
+    height: var(--horiLineHeight);
+    background-color: black;
+    border-radius: .15rem;
+    box-shadow: 
+    .5px .5px 1.5px rgba(0, 255, 236, 0.8), 
+    -.5px -.5px 1.5px rgba(0, 255, 236, 0.8);
+}
+
+@media (max-width:500px){
+    :root{
+        --cellSide:19.5rem;
+        --horiLineHeight:.2rem;
+    }
+}

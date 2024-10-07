@@ -1,0 +1,26 @@
+.minesweeperInfoBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--boardSideMinesweeper);
+    height: 4rem;
+}
+.minesweeperleftInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+.minesweeperQuitBtn{
+    height: 3rem;
+    width: 5rem;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 1.5rem cyan;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

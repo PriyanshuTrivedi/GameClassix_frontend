@@ -1,0 +1,27 @@
+.toggleBtn {
+    height: 1.5rem;
+    width: 3.8rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding: .2rem .5rem;
+    box-sizing: border-box;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.innerToggler {
+    height: 1rem;
+    width: 1rem;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+}
+
+.toggleRight .innerToggler {
+    transform: translateX(1.8rem); 
+}
+
+.toggleLeft .innerToggler {
+    transform: translateX(0); 
+}

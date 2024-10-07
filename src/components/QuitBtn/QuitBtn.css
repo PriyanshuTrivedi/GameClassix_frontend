@@ -1,0 +1,23 @@
+.quitBtn{
+    height: 3rem;
+    width: 5rem;
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-weight: bold;
+}
+.quitBtn:hover{
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 2.5px rgba(0, 255, 236, 0.8), -1.5px -1.5px 2.5px rgba(0, 255, 236, 0.8);
+}
+@media (max-width:600px){
+    .quitBtn{
+        display: none;
+    }
+}

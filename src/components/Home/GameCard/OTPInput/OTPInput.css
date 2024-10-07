@@ -1,0 +1,15 @@
+.otpInput{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.otpBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+}

@@ -1,0 +1,10 @@
+.dot{
+    height: var(--dotSide);
+    width: var(--dotSide);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50%;
+}

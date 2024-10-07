@@ -1,0 +1,47 @@
+:root{
+    --cellSide:25rem;
+    --charCell:4rem;
+}
+.BingoCharContainer{
+    height: 5rem;
+    width: var(--cellSide);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.charBox{
+    height: var(--charCell);
+    width: var(--charCell);
+    border: 1px solid black;
+    border-radius: 1rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bingoCharSlash{
+    height: 110%;
+    width: .1rem;
+    background-color: black;
+    border-radius: .05rem;
+    box-shadow: 
+    1px 1px 3px rgba(0, 255, 236, 0.8), 
+    -1px -1px 3px rgba(0, 255, 236, 0.8);
+    transform: rotate(45deg);
+}
+.bingoChar{
+    /* background-color: rgb(229, 229, 142); */
+    background-color: black;
+    color: white;
+    box-shadow: 
+    4px 4px 8px rgba(0, 255, 236, 0.8), 
+    -4px -4px 8px rgba(0, 255, 236, 0.8);
+    font-size: 24px;
+}
+
+@media (max-width:500px){
+    :root{
+        --cellSide:19.5rem;
+        --charCell:3.5rem;
+    }
+}

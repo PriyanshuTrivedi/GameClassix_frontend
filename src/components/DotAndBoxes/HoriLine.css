@@ -1,0 +1,15 @@
+.horiLineContainer{
+    height: var(--dotSide);
+    width: var(--boxSide);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.horiLine{
+    height: 20%;
+    width: 95%;
+    border-radius: 1rem;
+    background-color: beige;
+    border: 1px solid black;
+    cursor: pointer;
+}

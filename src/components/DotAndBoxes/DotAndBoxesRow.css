@@ -1,0 +1,8 @@
+/* :root{
+    --cellSide:25rem;
+    --diagSide:31rem;
+    --diagWidth:.3rem;
+} */
+.horiLinesAndDotsDiv,.vertLinesAndBoxesDiv{
+    display: flex;
+}

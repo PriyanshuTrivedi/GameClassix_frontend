@@ -1,0 +1,30 @@
+:root{
+    --cellSide:25rem;
+    --vertLineWidth:.3rem;
+}
+.bingo_vertLines{
+    height: var(--cellSide);
+    width: var(--cellSide);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+.bingo_vertLine{
+    width: var(--vertLineWidth);
+    height: 90%;
+    background-color: black;
+    border-radius: .15rem;
+    box-shadow: 
+    .5px .5px 1.5px rgba(0, 255, 236, 0.8), 
+    -.5px -.5px 1.5px rgba(0, 255, 236, 0.8);
+}
+
+@media (max-width:500px){
+    :root{
+        --cellSide:19.5rem;
+        --vertLineWidth:.2rem;
+    }
+}

@@ -1,0 +1,120 @@
+.gameCard{
+    min-height: 30rem;
+    min-width:20rem;
+    height: 30rem;
+    width:20rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+    margin: 1rem;
+    border-radius: .5rem;
+    backdrop-filter: blur(5px);
+}
+.gameCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.gameImg{
+    height: 45%;
+    width: 100%;
+}
+.gameName{
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gameImg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+.gameInfo{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid orange; */
+}
+.multiplayerBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid blue; */
+}
+.diffDiv,.sizeMatDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.roomBtnsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+}
+.roomBtns{
+    height: 2rem;
+    width: 6rem;
+    font-size: 14px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    transition: box-shadow .3s ease-in;
+    background-color: rgb(35, 35, 35);
+    color: rgb(214, 209, 209);
+}
+.roomBtns:hover{
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.inptFieldHome{
+    width: 7rem;
+    border: none;
+    border-radius: .2rem;
+}
+.roomMultiplayer,.vsCompDiv{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px){
+    .gameCard{
+        min-height: 25rem;
+        min-width:15rem;
+        height: 25rem;
+        width:15rem;
+        padding: .5rem 1rem;
+    }
+    .gameInfo{
+        width: 13rem;
+    }
+    .multiplayerBtn,.diffDiv,.sizeMatDiv{
+        font-size: 12px;
+    }
+    .roomBtns{
+        margin-bottom: .5rem;
+    }
+}

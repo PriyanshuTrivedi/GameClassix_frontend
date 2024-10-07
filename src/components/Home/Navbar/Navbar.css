@@ -1,0 +1,30 @@
+.navbar{
+    height:10vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbarLeft{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.navbarRight{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.profile_logout,.login_register{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.addMarginLeft{
+    margin-left: 2rem;
+}
+.addMarginRight{
+    margin-right: 2rem;
+}

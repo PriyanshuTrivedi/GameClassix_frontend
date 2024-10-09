@@ -28,6 +28,12 @@ const Minesweeper = () => {
     const [minesLeft,setMinesLeft]=useState(minesAccToSize[n]);
     const [gameEnded,setGameEnded]=useState(false);
     const [stopTimer,setStopTimer]=useState(false);
+    
+    useEffect(()=>{
+        if(localStorage.getItem('u-token')===null){
+            navigate('/signup_login');
+        }
+    },[]);
 
     useEffect(()=>{
         if(gameEnded===true){

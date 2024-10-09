@@ -17,6 +17,12 @@ const Sudoku = () => {
     const [gameEnded,setGameEnded]=useState(false);
 
     const navigate=useNavigate();
+    
+    useEffect(()=>{
+        if(localStorage.getItem('u-token')===null){
+            navigate('/signup_login');
+        }
+    },[]);
 
     useEffect(()=>{
         async function fetchInitially(){
